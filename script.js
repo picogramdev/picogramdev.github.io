@@ -14,8 +14,8 @@ function resize(){
   var scrolly = $(window).scrollTop();
   
   $("#picobanner").css({"left" : ((width / 2) - 100) + "px" , "top" : ((height / 2) - 72) + "px" });
-  $("#buttons").css({"left" : ((width / 2) - 59) + "px" , "top" : ((height / 2) + 58) + "px" });
-  $("#soonbanner").css({"left" : ((width / 2) - 89) + "px" , "top" : ((height / 2) + 24) + "px" });
-
+   $("#soonbanner").css({"left" : ((width / 2) - 89) + "px" , "top" : ((height / 2) + 24) + "px" });
+  $("#buttons").css({"left" : ((width / 2) - 59) + "px" , "top" : ((height / 2) + 86) + "px" });
+  $("#buttonback").css({"left" : ((width / 2) - 68) + "px" , "top" : ((height / 2) + 56) + "px" });
   
 };
