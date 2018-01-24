@@ -38,7 +38,7 @@ body {
   }
 }
 
-#buttons, #soonbanner {
+#buttons, #soonbanner, #buttonback {
   position: fixed;
 }
 
