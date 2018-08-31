@@ -1,21 +1,30 @@
-$(document).ready(function() {
-  resize();
+function greetMe(name) {
+  var today = new Date().toDateString();
+  console.log("Hello " + name + ", today is " + today);
+}
 
+greetMe("World");
+
+$(function(){
+  var x = 0;
+  var y = 0;
+  setInterval(function(){
+    x -=3;
+    y -=2;
+    $('#bg').css('background-position', x + 'px ' + y +'px');
+  }, 50);
 });
 
-$(window).on('resize orientationChange', function(){ resize()} );
-window.onscroll = function() {resize()};
+function hoverdiv(e,divid){
 
-function resize(){
-  
+  var left  = e.clientX  + "px";
+  var top  = e.clientY  + "px";
 
-  var width = $(window).width();
-  var height = $(window).height();
-  var scrolly = $(window).scrollTop();
+  var div = document.getElementById(divid);
   
-  $("#picobanner").css({"left" : ((width / 2) - 100) + "px" , "top" : ((height / 2) - 72) + "px" });
-   $("#soonbanner").css({"left" : ((width / 2) - 89) + "px" , "top" : ((height / 2) + 24) + "px" });
-  $("#buttons").css({"left" : ((width / 2) - 59) + "px" , "top" : ((height / 2) + 86) + "px" });
-  $("#buttonback").css({"left" : ((width / 2) - 68) + "px" , "top" : ((height / 2) + 56) + "px" });
-  
-};
+  div.style.left = left;
+  div.style.top = top;
+
+  $("#"+divid).toggle();
+  return false;
+}
