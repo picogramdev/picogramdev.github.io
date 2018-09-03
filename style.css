@@ -50,6 +50,8 @@ img {
 .headerbtn:hover { transform: scale(1); }
 
 #toplogo, .logo {
+  max-height: 294px;
+  max-width: 798px;
   padding-top: 20px;
   justify-self: center;
   transition: all .7s;
