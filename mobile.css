@@ -1,0 +1,157 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+@font-face {
+  font-family: picoscript;
+  src: url(PicoScriptPlain.ttf);
+}
+
+body {
+  text-align:center;
+}
+
+img {
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+}
+
+#bg{
+  background-image: url("images/bg_normal.png")
+}
+
+img {
+  z-index: 9999999;
+}
+
+.descriptor, .name, .item img, .textbox {box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+
+.textbox {
+
+
+}
+
+.container {
+
+  align-content: center;
+  display: grid;
+
+  margin-top: 10vh;
+  grid-template-columns: 50fr 30vw 30vw 30vw 50fr;
+  grid-template-rows: 30vw 2px 120px 120px 120px 180px;
+  justify-self: center;
+}
+
+#midheader {
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  justify-self: center;
+}
+
+.headerbtn { transition: all .1s; transform: scale(.8); }
+.headerbtn:hover { transform: scale(1); }
+
+#toplogo, .logo {
+  padding-top: 20px;
+  width: 80vw;
+  justify-self: center;
+  transition: all .7s;
+}
+
+#toplogo:hover {
+  transform: scale(1.2);
+}
+
+.header {
+  padding-top: 0px;
+
+  justify-self: center;
+}
+
+.item {
+  z-index: 999;
+  justify-self: center;
+
+  /*shadow here*/
+}
+
+.item { transition: all .1s; transform: scale(.25); text-align: center}
+.item:hover { transform: scale(.35);}
+
+#hbtn {
+  margin-left: 20px;
+  margin-right: 20px;
+  justify-self: center;
+}
+
+.name {
+  z-index: 100;
+  position: relative;
+  color: #323155;
+  font-family: picoscript;
+  font-smooth: never;
+  font-size: 4em; 
+  height: 80px;
+  top: 4px;
+  border-radius: 6px;
+  text-align: center;
+  background-color: white;
+}
+
+.item:hover .descriptor {
+  visibility: visible;
+  text-overflow: ellipsis;
+  width: 200px;
+  left: 193px;
+  color: #1d6067;
+}
+
+.item .descriptor {
+  z-index: 1;
+  text-overflow: ellipsis;
+  width: 100px;
+  white-space: nowrap;
+  padding: 4px 15px;
+  left: 243px;
+  color: #323155;
+  visibility: hidden;
+  position: relative;
+  font-family: picoscript;
+  font-smooth: never;
+  text-align: center;
+  font-size: 2em; 
+  background-color: white;
+
+  top: 296px;
+  overflow: hidden;
+  text-align: center;
+  justify-self: center;
+  border-radius: 6px;
+  transition: width .5s, left .5s, height .5s, color .5s;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+
+
+
+.item:hover .name {
+  visibility: hidden;
+  width: 600px;
+  left: -150px;
+  height: 80px;
+}
+
+/*animations*/
+@keyframes #bg {
+  0%{
+    transform: translate3d(0, 0, 0);
+  }
+  100%{
+    transform: translate3d(-192px, 0, 0); /* The image width */
+  }
+}
