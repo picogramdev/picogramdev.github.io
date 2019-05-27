@@ -14,7 +14,6 @@ img {
   image-rendering: auto;
   image-rendering: crisp-edges;
   image-rendering: pixelated;
-  
 }
 
 #bg{
@@ -25,8 +24,12 @@ img {
   z-index: 9999999;
 }
 
-.descriptor, .name, .item img {box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
+.descriptor, .name, .item img, .textbox {box-shadow: 0 15px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);}
 
+.textbox {
+
+
+}
 
 .container {
   
@@ -50,9 +53,9 @@ img {
 .headerbtn:hover { transform: scale(1); }
 
 #toplogo, .logo {
+  padding-top: 20px;
   max-height: 294px;
   max-width: 798px;
-  padding-top: 20px;
   justify-self: center;
   transition: all .7s;
 }
