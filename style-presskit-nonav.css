@@ -23,10 +23,8 @@ table {
 }
 
 #navi_bar {
-  width: 30%;
-  min-width: 300px;
-  position: fixed;
-  font-size: 24;
+  width: 0%;
+  font-size: 0;
 }
 
 #header{
@@ -35,14 +33,8 @@ table {
   margin-right:auto;
 }
 
-#logo {
-  width: 80%;
-  margin-left:auto; 
-  margin-right:auto;
-}
-
 #title {
-  font-size: 32px;
+  font-size: 0px;
   font-weight: bold;
 }
 
@@ -56,8 +48,8 @@ table {
   text-align: left;
   vertical-align: top;
   min-width: 220px;
-  
-  
+
+
 }
 
 #spacer {
@@ -66,7 +58,7 @@ table {
 
 #screenshots {
   margin-top: 50px;
-  
+
 }
 
 #credits, #contact {
@@ -74,6 +66,12 @@ table {
   width: 45%;
   margin-top: 50px;
   margin-right: 10px
+}
+
+#logo {
+  width: 80%;
+  margin-left:auto; 
+  margin-right:auto;
 }
 
 .screenshot {
